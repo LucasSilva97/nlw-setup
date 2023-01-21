@@ -39,6 +39,10 @@ button,
   gap: 12px;
 }
 
+button:hover{
+  animation: borderBottom 500ms ease-out 100ms 1 normal forwards;
+}
+
 form {
   display: flex;
 
@@ -56,6 +60,7 @@ form {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
+  
   gap: 24px;
 }
 
@@ -63,10 +68,15 @@ form {
   width: 64px;
   height: 64px;
   font-size: 32px;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+}
+
+.habit:hover{
+  animation: moveBorder 700ms ease-out 100ms 1 normal forwards;
 }
 
 .days {
@@ -83,7 +93,7 @@ form {
 
 .day div {
   margin-bottom: 8px;
-
+  
   font-family: "Roboto Mono";
   font-size: 20px;
   line-height: 125%;
@@ -101,7 +111,6 @@ input {
   background: #18181b;
 }
 
-/* Pseudoselector*/
 
 input:checked {
   background: #8b5cf6;
@@ -113,3 +122,20 @@ input:checked {
     display: none;
   }
 }
+
+@keyframes moveBorder{
+  0%{
+    border-right: 1px solid #a78bfa;
+  }
+  25%{border-top: 1px solid #a78bfa;}
+  50%{
+    border-left: 1px solid #a78bfa;
+    border-bottom: 1px solid #a78bfa;
+  }
+  100%{
+    border-right: 1px solid #a7bbfa;
+    border-radius: 0;
+  }
+}
+
+
