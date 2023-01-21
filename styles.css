@@ -123,6 +123,13 @@ input:checked {
   }
 }
 
+@media (max-width: 480px){
+  .clock-box{
+    position: fixed;
+    margin-top: 200px;
+  }
+}
+
 @keyframes moveBorder{
   0%{
     border-right: 1px solid #a78bfa;
