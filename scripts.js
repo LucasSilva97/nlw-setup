@@ -33,7 +33,7 @@ function showClock() {
   clock.seconds =
     clock.getSeconds() < 10 ? "0" + clock.getSeconds() : clock.getSeconds()
 
-  let showClock = `Hora: ${clock.hours}:${clock.minutes}:${clock.seconds}`
+  let showClock = `🕰️ ${clock.hours}:${clock.minutes}:${clock.seconds}`
   localClock.innerHTML = showClock
 }
 
