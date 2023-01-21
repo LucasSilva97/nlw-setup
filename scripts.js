@@ -1,7 +1,7 @@
 const form = document.querySelector("#form-habits")
 const nlwSetup = new NLWSetup(form)
 const button = document.querySelector("header button")
-let localClock = document.getElementById("localClock")
+let localClock = document.getElementById("local-clock")
 
 button.addEventListener("click", add)
 form.addEventListener("change", save)
